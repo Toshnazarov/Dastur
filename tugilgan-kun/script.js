@@ -2,9 +2,9 @@
    SOZLAMALAR — shu yerni o'zgartiring
    ========================================================= */
 const SOZLAMA = {
-  ism: "Opajonim",                       // Opangizning ismi, masalan: "Dilnoza opa"
+  ism: "Kumush",                         // Opaning ismi
   imzo: "Seni cheksiz yaxshi ko'radigan jigaring 💕",
-  shamlar: 5,                            // Tortdagi shamlar soni
+  yosh: 21,                              // Necha yoshga kirdi (tortda raqamli shamlar)
 
   // Rasmlar: fayllarni "images" papkasiga qo'ying va nomlarini shu yerda yozing.
   // Rasm topilmasa, uning o'rnida chiroyli bo'sh ramka chiqadi.
@@ -35,6 +35,7 @@ const TILAKLAR = [
 const TYPED_MATNLAR = [
   "Bugun dunyodagi eng ajoyib insonning kuni!",
   "Sen — mening faxrim, suyanchig'im va eng yaqin do'stim.",
+  "21 yosh — eng go'zal, eng yorqin yosh muborak bo'lsin!",
   "Yana bir yil go'zallik, aql va mehr bilan to'ldi.",
 ];
 
@@ -272,18 +273,19 @@ $("#musicBtn").onclick = () => {
 
 /* ---------- Tort shamlari ---------- */
 const candlesEl = $("#candles");
-let lit = SOZLAMA.shamlar;
-for (let i = 0; i < SOZLAMA.shamlar; i++) {
+const digits = String(SOZLAMA.yosh).split("");
+let lit = digits.length;
+for (const d of digits) {
   const c = document.createElement("div");
-  c.className = "candle";
-  c.innerHTML = '<div class="flame"></div>';
+  c.className = "candle digit";
+  c.innerHTML = `<div class="flame"></div><span>${d}</span>`;
   c.title = "Puflash uchun bos";
   c.addEventListener("click", () => {
     if (c.classList.contains("out")) return;
     c.classList.add("out");
     lit--;
     if (lit === 0) {
-      $("#cakeMsg").textContent = "Niyating albatta ijobat bo'ladi! 🌟";
+      $("#cakeMsg").textContent = `${SOZLAMA.yosh} yoshing muborak, ${SOZLAMA.ism}! Niyating albatta ijobat bo'ladi! 🌟`;
       bigCelebration();
     }
   });
