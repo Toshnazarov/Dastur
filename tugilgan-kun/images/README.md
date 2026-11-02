@@ -1,11 +1,6 @@
-# Rasmlar papkasi
+# Rasmlar
 
-Rasmlarni shu papkaga quyidagi nomlar bilan qo'ying:
+- `asosiy.jpg` — bosh sahifadagi aylana ramka
+- `rasm1.jpg` … `rasm7.jpg` — galereya
 
-| Fayl nomi     | Qayerda chiqadi                        |
-|---------------|----------------------------------------|
-| `asosiy.jpg`  | Bosh sahifadagi aylana ramka (eng chiroylisi) |
-| `rasm1.jpg` … `rasm6.jpg` | "Unutilmas lahzalar" galereyasi |
-
-Ko'proq yoki boshqa nomdagi rasmlar uchun `script.js` faylining boshidagi
-`rasmlar` ro'yxatini tahrirlang (fayl nomi va rasm ostidagi yozuv).
+Rasm qo'shish yoki yozuvini o'zgartirish uchun `script.js` boshidagi `rasmlar` ro'yxatini tahrirlang.

@@ -65,7 +65,7 @@ body{
 .cursor{animation:pulse 1s infinite;margin-left:2px}
 .hero-photo{width:min(300px,70vw);height:min(300px,70vw);flex-shrink:0;border-radius:50%;padding:6px;
   background:conic-gradient(var(--pink),var(--gold),var(--violet),var(--pink));animation:spin 10s linear infinite}
-.hero-photo img,.hero-photo .ph{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%;
+.hero-photo img,.hero-photo .ph{display:block;width:100%;height:100%;object-fit:cover;object-position:40% 40%;border-radius:50%;
   border:5px solid var(--bg2);animation:spin 10s linear infinite reverse}
 .scroll-down{margin-top:34px;color:#fff;text-decoration:none;opacity:.8;animation:bounce 2s infinite}
 @keyframes bounce{50%{transform:translateY(8px)}}

@@ -9,12 +9,13 @@ const SOZLAMA = {
   // Rasmlar: fayllarni "images" papkasiga qo'ying va nomlarini shu yerda yozing.
   // Rasm topilmasa, uning o'rnida chiroyli bo'sh ramka chiqadi.
   rasmlar: [
-    { fayl: "images/rasm1.jpg", izoh: "Eng shirin tabassum" },
-    { fayl: "images/rasm2.jpg", izoh: "Bolaligimiz" },
-    { fayl: "images/rasm3.jpg", izoh: "Birga o'tgan kunlar" },
-    { fayl: "images/rasm4.jpg", izoh: "Go'zalligim" },
-    { fayl: "images/rasm5.jpg", izoh: "Baxtli lahza" },
-    { fayl: "images/rasm6.jpg", izoh: "Doim shunday kul!" },
+    { fayl: "images/rasm2.jpg", izoh: "Eng go'zal kelinchak" },
+    { fayl: "images/rasm3.jpg", izoh: "Baxtli kunimiz" },
+    { fayl: "images/rasm1.jpg", izoh: "Bahor qizi 🌷" },
+    { fayl: "images/rasm4.jpg", izoh: "Sho'x kelinchak 😘" },
+    { fayl: "images/rasm5.jpg", izoh: "Onajonim bilan" },
+    { fayl: "images/rasm6.jpg", izoh: "Jigarlar" },
+    { fayl: "images/rasm7.jpg", izoh: "Oilam — baxtim" },
   ],
 };
 
@@ -24,7 +25,7 @@ const SOZLAMA = {
 const TILAKLAR = [
   { e: "🌷", t: "Sog'liq", m: "Tanang hech qachon og'rimasin, ko'nglingga hech qachon g'ubor qo'nmasin. Har tonging tetiklik bilan, har kecha xotirjamlik bilan o'tsin." },
   { e: "😊", t: "Tabassum", m: "Yuzingdagi tabassum — uyimizning quyoshi. U hech qachon so'nmasin, faqat quvonchdan yoshlansin ko'zlaring." },
-  { e: "🏡", t: "Oila baxti", m: "Xonadoning doim fayzli, dasturxoning doim to'kin bo'lsin. Yoningdagilar seni men qanchalik qadrlasam, shunchalik qadrlasin." },
+  { e: "🏡", t: "Oila baxti", m: "Yangi oilang mustahkam, xonadoning fayzli, dasturxoning doim to'kin bo'lsin. Turmush o'rtog'ing bilan bir-biringizga suyanch bo'lib, umrbod baxtli yashanglar." },
   { e: "✨", t: "Orzular", m: "Yuragingda yashirib yurgan har bir orzu birma-bir ro'yobga chiqsin. Bugun qilgan niyating esa eng birinchi bo'lib ijobat bo'lsin." },
   { e: "💪", t: "Kuch va sabr", m: "Hayot sinovlarida doim mana shunday mard, aqlli va kuchli bo'l. Lekin bilib qo'y — har qiyin damda men yoningdaman." },
   { e: "💰", t: "Farovonlik", m: "Rizqing ariq suvidek oqib kelsin, barakang hech qachon kamaymasin. Mehnating doim munosib qadrlansin." },
