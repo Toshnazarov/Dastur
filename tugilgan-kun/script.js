@@ -3,7 +3,7 @@
    ========================================================= */
 const SOZLAMA = {
   ism: "Kumush",                         // Opaning ismi
-  imzo: "Seni cheksiz yaxshi ko'radigan jigaring 💕",
+  imzo: "Seni cheksiz yaxshi ko'radigan ukang 💕",
   yosh: 21,                              // Necha yoshga kirdi (tortda raqamli shamlar)
 
   // Rasmlar: fayllarni "images" papkasiga qo'ying va nomlarini shu yerda yozing.
@@ -14,7 +14,7 @@ const SOZLAMA = {
     { fayl: "images/rasm1.jpg", izoh: "Bahor qizi 🌷" },
     { fayl: "images/rasm4.jpg", izoh: "Sho'x kelinchak 😘" },
     { fayl: "images/rasm5.jpg", izoh: "Onajonim bilan" },
-    { fayl: "images/rasm6.jpg", izoh: "Jigarlar" },
+    { fayl: "images/rasm6.jpg", izoh: "Opa-uka" },
     { fayl: "images/rasm7.jpg", izoh: "Oilam — baxtim" },
   ],
 };
