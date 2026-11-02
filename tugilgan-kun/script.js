@@ -4,7 +4,8 @@
 const SOZLAMA = {
   ism: "Kumush",                         // Opaning ismi
   imzo: "Seni cheksiz yaxshi ko'radigan ukang 💕",
-  yosh: 21,                              // Necha yoshga kirdi (tortda raqamli shamlar)
+  yosh: 21,
+  musiqa: "music/tavalod.mp3",           // Qo'shiq fayli (topilmasa "Happy Birthday" kuyi chalinadi)                              // Necha yoshga kirdi (tortda raqamli shamlar)
 
   // Rasmlar: fayllarni "images" papkasiga qo'ying va nomlarini shu yerda yozing.
   // Rasm topilmasa, uning o'rnida chiroyli bo'sh ramka chiqadi.
@@ -253,24 +254,33 @@ function playMelody() {
   const total = MELODY.reduce((s, [, d]) => s + d, 0) * BEAT;
   musicTimer = setTimeout(playMelody, (total + 1.5) * 1000);
 }
+// Qo'shiq fayli bo'lsa — o'sha, bo'lmasa sintez qilingan kuy
+const song = new Audio(SOZLAMA.musiqa);
+song.loop = true;
+song.preload = "auto";
+let songOk = true;
+song.addEventListener("error", () => { songOk = false; if (musicOn) startSynth(); });
+function startSynth() {
+  audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+  audioCtx.resume();
+  clearTimeout(musicTimer);
+  playMelody();
+}
 function toggleMusic(force) {
   musicOn = typeof force === "boolean" ? force : !musicOn;
   const btn = $("#musicBtn");
   btn.classList.add("show");
   btn.classList.toggle("on", musicOn);
   if (musicOn) {
-    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
-    audioCtx.resume();
-    playMelody();
+    if (songOk) song.play().catch(() => { songOk = false; if (musicOn) startSynth(); });
+    else startSynth();
   } else {
+    song.pause();
     clearTimeout(musicTimer);
     if (audioCtx) audioCtx.suspend();
   }
 }
-$("#musicBtn").onclick = () => {
-  if (musicOn) { toggleMusic(false); }
-  else { if (audioCtx) audioCtx.resume(); toggleMusic(true); }
-};
+$("#musicBtn").onclick = () => toggleMusic(!musicOn);
 
 /* ---------- Tort shamlari ---------- */
 const candlesEl = $("#candles");
