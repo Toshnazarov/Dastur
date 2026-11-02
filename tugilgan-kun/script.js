@@ -10,6 +10,10 @@ const SOZLAMA = {
   // Rasmlar: fayllarni "images" papkasiga qo'ying va nomlarini shu yerda yozing.
   // Rasm topilmasa, uning o'rnida chiroyli bo'sh ramka chiqadi.
   rasmlar: [
+    { fayl: "images/rasm11.jpg", izoh: "Shamcha yonganda 🕯️" },
+    { fayl: "images/rasm8.jpg", izoh: "Sharlar va tabassum 🎈" },
+    { fayl: "images/rasm9.jpg", izoh: "Bayram malikasi 👑" },
+    { fayl: "images/rasm10.jpg", izoh: "Niyat qilingan lahza ✨" },
     { fayl: "images/rasm2.jpg", izoh: "Eng go'zal kelinchak" },
     { fayl: "images/rasm3.jpg", izoh: "Baxtli kunimiz" },
     { fayl: "images/rasm1.jpg", izoh: "Bahor qizi 🌷" },
