@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video slayd</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <h1>Video slayd</h1>
+
+    <div class="slider" id="slider">
+        <div class="slides">
+            <!-- Yangi video qo'shish uchun shunchaki yana bitta .slide qo'shing -->
+            <div class="slide active">
+                <video src="videos/1.mp4" muted playsinline></video>
+                <p class="caption">1-video</p>
+            </div>
+            <div class="slide">
+                <video src="videos/2.mp4" muted playsinline></video>
+                <p class="caption">2-video</p>
+            </div>
+            <div class="slide">
+                <video src="videos/3.mp4" muted playsinline></video>
+                <p class="caption">3-video</p>
+            </div>
+        </div>
+
+        <button class="btn prev" aria-label="Oldingi">&#10094;</button>
+        <button class="btn next" aria-label="Keyingi">&#10095;</button>
+
+        <div class="dots"></div>
+    </div>
+
+    <div class="controls">
+        <button id="playPause">⏸ To'xtatish</button>
+        <button id="sound">🔇 Ovoz</button>
+    </div>
+
+    <script src="video.js"></script>
+</body>
+</html>
